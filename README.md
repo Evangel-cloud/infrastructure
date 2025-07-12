@@ -1,57 +1,61 @@
-🚀 Project Roadmap
-
-✅ Phase 1: Infrastructure Setup with Terraform (Completed)
-Provisioned AWS infrastructure using Terraform modules:
-
-VPC with public and private subnets
-
-Security groups for web, app, and database tiers
-
-Application Load Balancers
-
-Auto Scaling Groups with Launch Templates
-
-RDS database in private subnet
+<h1>🚀 Project Roadmap</h1>
 
 
-⚙️ Phase 2: Ansible Configuration for Web Tier (Coming Soon – End July)
-Automating server provisioning and web app configuration with Ansible
+<h2>✅ Phase 1: Infrastructure Setup with Terraform (Completed) </h2>
+<h3>Provisioned AWS infrastructure using Terraform modules:</h3>
+<ul>
+<li>VPC with public and private subnets</li>
 
-Plans:
+<li>Security groups for web, app, and database tiers</li>
 
-Install necessary packages
+<li>Application Load Balancers</li>
 
-Deploy sample web app
+<li>Auto Scaling Groups with Launch Templates</li>
 
-Configure Nginx/Apache, systemd services, firewall
+<li>RDS database in private subnet</li>
+</ul>
+
+<h2>⚙️ Phase 2: Ansible Configuration for Web Tier (Coming Soon – End July)</h2>
+<h3>Automating server provisioning and web app configuration with Ansible</h3>
+
+Planned features:
+<ul>
+<li>Install necessary packages</li>
+
+<li>Deploy sample web app</li>
+
+<li>Configure Nginx/Apache, systemd services, firewall</li>
+</ul>
 
 Status: Learning Ansible in progress
 
 
-🛠️ Phase 3: CI/CD Pipeline Integration (Coming Soon – End August)
-Implementing CI/CD pipeline with GitHub Actions
+<h2>🛠️ Phase 3: CI/CD Pipeline Integration (Coming Soon – End August)</h2>
+<h3>Implementing CI/CD pipeline with GitHub Actions</h3>
 
 Planned features:
+<ul>
+<li>terraform fmt, validate, plan, apply on PR/merge</li>
 
-terraform fmt, validate, plan, apply on PR/merge
+<li>Secrets management with GitHub Actions</li>
 
-Secrets management with GitHub Actions
-
-Approval gates before production apply
+<li>Approval gates before production apply</li>
+</ul>
 
 Status: Planning phase
 
-📊 Phase 4: Monitoring, Metrics, and Logging (Planned)
-Setting up monitoring and observability to ensure application health and performance
+<h2>📊 Phase 4: Monitoring, Metrics, and Logging (Planned)</h2>
+<h3>Setting up monitoring and observability to ensure application health and performance</h3>
 
-Focus areas:
+Planned features:
+<ul>
+<li>Implement metrics collection with Prometheus</li>
 
-Implement metrics collection with Prometheus
+<li>Visualize dashboards with Grafana</li>
 
-Visualize dashboards with Grafana
+<li>Centralized logging using Elasticsearch and Kibana</li>
 
-Centralized logging using Elasticsearch and Kibana
-
-Alerting and notifications on key events and thresholds
+<li>Alerting and notifications on key events and thresholds</li>
+</ul>
 
 Status: Planning phase
