@@ -19,46 +19,50 @@ This project sets up a full-stack cloud infrastructure on AWS using Terraform. I
 <li>RDS database in private subnet</li>
 </ul>
 <br>
-<h3>⚙️ Phase 2: Ansible Configuration for Web Tier (Coming Soon – End July)</h3>
-<h4>Automating server provisioning and web app configuration with Ansible</h4>
+<h3>⚙️ Phase 2: Kubernetes Setup & App Deployment via Ansible + Helm (Coming Soon – End July)</h3>
+<h4>Automate Kubernetes environment and app deployment</h4>
 
 Planned features:
 <ul>
-<li>Install necessary packages</li>
+<li>Install Docker/containerd, kubectl, and helm</li>
 
-<li>Deploy sample web app</li>
+<li>Launch Minikube or Kind Kubernetes cluster locally</li>
 
-<li>Configure Nginx/Apache, systemd services, firewall</li>
+<li>Manage Helm repos and deploy apps with Helm charts/li>
+
+<li>Deploy sample web app with custom Helm chart/li>
+
+<li>Set up namespace, liveliness probe, nginx ingress controller/li>
 </ul>
 
-Status: Learning Ansible in progress
+Status: Planning phase
 <br>
 <br>
-<h3>🛠️ Phase 3: CI/CD Pipeline Integration (Coming Soon – End August)</h3>
-<h4>Implementing CI/CD pipeline with GitHub Actions</h4>
+<h3>🛠️ Phase 3: CI/CD Pipeline Integration using Github Action (Coming Soon – End August)</h3>
+<h4>Full automation from code to container to Kubernetes</h4>
 
 Planned features:
 <ul>
-<li>terraform fmt, validate, plan, apply on PR/merge</li>
+<li>Build & push Docker image to GitHub Container Registry/li>
 
-<li>Secrets management with GitHub Actions</li>
+<li>Deploy Helm charts to local K8s cluster or perform dry-run validation</li>
 
-<li>Approval gates before production apply</li>
+<li> Secrets management using GitHub Actions secrets </li>
 </ul>
 
 Status: Planning phase
 <br>
 <br>
 <h3>📊 Phase 4: Monitoring, Metrics, and Logging (Planned)</h3>
-<h4>Setting up monitoring and observability to ensure application health and performance</h4>
+<h4>Setting up monitoring and observability to ensure application health and performance, visibility into app and cluster health</h4>
 
 Planned features:
 <ul>
-<li>Implement metrics collection with Prometheus</li>
+<li>Deploy via helm - Prometheus + Grafana</li>
 
-<li>Visualize dashboards with Grafana</li>
+<li>Loki + Promtail for logging (lightweight)</li>
 
-<li>Centralized logging using Elasticsearch and Kibana</li>
+<li> Export Grafana dashboards</li>
 
 <li>Alerting and notifications on key events and thresholds</li>
 </ul>
